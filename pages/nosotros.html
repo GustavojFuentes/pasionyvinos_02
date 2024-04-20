@@ -8,130 +8,113 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="header"> 
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/logo-nav-bar.jpg" alt="Logo Pasion y Vinos">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="../index.html">
+                <img src="../assets/img/logo-nav-bar.jpg" alt="Logo Pasion y Vinos">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pasion y Vinos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./catalogo.html">Catálogo</a>
+                            <a class="nav-link mx-lg-2" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./eventos.html">Eventos</a>
+                            <a class="nav-link mx-lg-2" href="./catalogo.html">Catálogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                            <a class="nav-link mx-lg-2" href="./eventos.html">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-redes">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://api.whatsapp.com/send?phone=543546566391" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://www.instagram.com/pasionyvinos_ok/" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://www.facebook.com/pasionyvinos" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://twitter.com/PasionVinos" target="_blank">
-                                <i class="bi bi-twitter-x"></i>
-                            </a>
+                            <a class="nav-link mx-lg-2" href="./contacto.html" >Contacto</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
-<main>
-    <section class="nosotros">
-        <div class="foto-nosotros">
-            <img src="../assets/paisaje_2.jpg" alt="Paisaje a Color de la Pintoresca Ciudad Villa del Dique, Córdoba, Argentina">
+                            </div>
+                <a href="#" class="login-button">login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
         </div>
-        <div class="info-nosotros">
+    </nav>
+    
+    <main>
+        <div class="encabezado-nosotros">
             <h1>Nosotros</h1>
-            <p id="nos">
-                En la pintoresca ciudad Villa del Dique, Córdoba, Argentina, se encuentra la vinoteca Pasión y Vinos, un lugar donde la pasión por el vino se manifiesta en cada detalle. 
-                Sus fundadores, Daniel Alonso y Analía Etcheverry ingenieros agrónomos y músicos apasionados por los tintos, blancos y espumantes.
-                Aunque también se dedica a componer música para películas, la administración de la vinoteca es su verdadera pasión.
+        </div>
+        <section class="nosotros">
+            <div class="info-nosotros">
+                <p id="nos">
+                    En la pintoresca ciudad Villa del Dique, Córdoba, Argentina, se encuentra la vinoteca Pasión y Vinos, un lugar donde la pasión por el vino se manifiesta en cada detalle. 
+                    Sus fundadores, Daniel Alonso y Analía Etcheverry ingenieros agrónomos y músicos apasionados por los tintos, blancos y espumantes.
+                    Aunque también se dedica a componer música para películas, la administración de la vinoteca es su verdadera pasión.
 
-                Pasión y Vinos Vinoteca es un lugar donde se fusiona la pasión por el vino con la búsqueda de experiencias sensoriales.
-                Ubicada en el corazón de la ciudad Villa del Dique, al sur de Córdoba, esta vinoteca ofrece una selección exclusiva de etiquetas argentinas e internacionales.
-                Además de vinos, también encontrarás cristalería y accesorios de calidad para disfrutar al máximo tus momentos de degustación. 
+                    Pasión y Vinos Vinoteca es un lugar donde se fusiona la pasión por el vino con la búsqueda de experiencias sensoriales.
+                    Ubicada en el corazón de la ciudad Villa del Dique, al sur de Córdoba, esta vinoteca ofrece una selección exclusiva de etiquetas argentinas e internacionales.
+                    Además de vinos, también encontrarás cristalería y accesorios de calidad para disfrutar al máximo tus momentos de degustación. 
 
-                Daniel y Analía fanáticos de la sepa Malbec, que tiene sus raíces en el sudoeste de Francia, donde se cultivaba esta cepa para elaborar vinos denominados “de Cahors”.
-                Estos vinos eran reconocidos desde los tiempos del Imperio Romano y se consolidaron en la Edad Media. 
-                Sin embargo, fue en Argentina donde el Malbec floreció y se convirtió en un símbolo de calidad y pasión por el vino.
+                    Daniel y Analía fanáticos de la sepa Malbec, que tiene sus raíces en el sudoeste de Francia, donde se cultivaba esta cepa para elaborar vinos denominados “de Cahors”.
+                    Estos vinos eran reconocidos desde los tiempos del Imperio Romano y se consolidaron en la Edad Media. 
+                    Sin embargo, fue en Argentina donde el Malbec floreció y se convirtió en un símbolo de calidad y pasión por el vino.
 
-                Así que, en este Día del Malbec, brindemos con una copa de este excepcional varietal argentino
-                Nuestro sommelier recomienda etiquetas excepcionales que te permitirán explorar los sabores y aromas del mundo del vino.
-                Ya sea que desees comprar botellas para una ocasión especial o sumarte a las experiencias que brindamos, Pasión y Vinos Vinoteca 
-                está aquí para compartir su conocimiento y pasión por el buen vivir.
-                ¡Salud!
-            </p>
-        </div>
-    </section>
-</main>
-<footer>
-    <section class="footer-container">
-        <div class="footer-bodegas">
-            <h4>BODEGAS</H4>
-            <li><a href="./pages/catalogo.html">Mendoza</a></li>
-            <li><a href="./pages/catalogo.html">Noa</a></li>
-            <li><a href="./pages/catalogo.html">Jujuy</a></li>
-        </div>
-        <div class="footer-socios">
-            <h4>SOCIOS</H4>
-            <li><a href="http://www.bressiabodega.com/" target="_blank">BRESSIA</a></li>
-            <li><a href="https://versatilrural.com/bodega/" target="_blank">VERSÁTIL</a></li>
-            <li><a href="https://luigibosca.com/" target="_blank">LUIGI BOSCA</a></li>
-        </div>
-        <div class="footer-catalogo">
-            <h4>CATÁLOGO</h4>
-            <li><a href="./pages/catalogo.html">Vinos</a></li>
-            <li><a href="./pages/catalogo.html">Espumantes</a></li>
-            <li><a href="./pages/catalogo.html">Aperitivos</a></li>
-        </div>
-        <div class="logo-footer">
-            <a href="../index.html">
-                <img src="../assets/img/logo-footer.png" alt="Logo Pasión y Vinos">
-            </a>
-        </div>
-        <div class="redes-footer">
-            <a href="https://maps.app.goo.gl/eC33B36Lo9dxaa7f7" target="_blank">
-                <img src="../assets/iconos/ico-gps.png" alt="Whatsapp">
-            </a>
-            <p>Av. San Martín 600, Villa del Dique. +54 3546 56-6391</p>
-            <a href="https://api.whatsapp.com/send?phone=543546566391" target="_blank">
-                <img src="../assets/iconos/whatsapp-30.png" alt="Whatsapp">
-            </a>
-            <a href="https://www.instagram.com/pasionyvinos_ok/" target="_blank">
-                <img src="../assets/iconos/instagram-30.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/pasionyvinos" target="_blank">
-                <img src="../assets/iconos/facebook-30.png" alt="Facebook">
-            </a>
-        </div>
-    </section>
-</footer>
+                    Así que, en este Día del Malbec, brindemos con una copa de este excepcional varietal argentino
+                    Nuestro sommelier recomienda etiquetas excepcionales que te permitirán explorar los sabores y aromas del mundo del vino.
+                    Ya sea que desees comprar botellas para una ocasión especial o sumarte a las experiencias que brindamos, Pasión y Vinos Vinoteca 
+                    está aquí para compartir su conocimiento y pasión por el buen vivir.
+                    ¡Salud!
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">
+            <div class="footer-bodegas">
+                <h4>BODEGAS</H4>
+                <li><a href="./pages/catalogo.html">Mendoza</a></li>
+                <li><a href="./pages/catalogo.html">Noa</a></li>
+                <li><a href="./pages/catalogo.html">Jujuy</a></li>
+            </div>
+            <div class="footer-socios">
+                <h4>SOCIOS</H4>
+                <li><a href="http://www.bressiabodega.com/" target="_blank">BRESSIA</a></li>
+                <li><a href="https://versatilrural.com/bodega/" target="_blank">VERSÁTIL</a></li>
+                <li><a href="https://luigibosca.com/" target="_blank">LUIGI BOSCA</a></li>
+            </div>
+            <div class="footer-catalogo">
+                <h4>CATÁLOGO</h4>
+                <li><a href="./pages/catalogo.html">Vinos</a></li>
+                <li><a href="./pages/catalogo.html">Espumantes</a></li>
+                <li><a href="./pages/catalogo.html">Aperitivos</a></li>
+            </div>
+            <div class="logo-footer">
+                <a href="../index.html">
+                    <img src="../assets/img/logo-footer.png" alt="Logo Pasión y Vinos">
+                </a>
+            </div>
+            <div class="redes-footer">
+                <a href="https://maps.app.goo.gl/eC33B36Lo9dxaa7f7" target="_blank">
+                    <img src="../assets/iconos/ico-gps.png" alt="Whatsapp">
+                </a>
+                <p>Av. San Martín 600, Villa del Dique. +54 3546 56-6391</p>
+                <a href="https://api.whatsapp.com/send?phone=543546566391" target="_blank">
+                    <img src="../assets/iconos/whatsapp-30.png" alt="Whatsapp">
+                </a>
+                <a href="https://www.instagram.com/pasionyvinos_ok/" target="_blank">
+                    <img src="../assets/iconos/instagram-30.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/pasionyvinos" target="_blank">
+                    <img src="../assets/iconos/facebook-30.png" alt="Facebook">
+                </a>
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

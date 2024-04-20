@@ -1,41 +1,69 @@
 
-.header {
-    height: 100%;
-    padding: 0px;
-    background-color: map-get($colores, color1 );
-    position: sticky;
-    align-items: center;
-}
-
-.container-fluid {
-    margin-top: 0px;
+.navbar {
     background-color: map-get($colores, color1); 
-    padding: 0%;
-    margin: 0%;
+    width: 100%;
+    height: 80px;
+
 }
 
-.header li a:hover {
-    text-decoration: underline;
-    text-shadow:black;
+.offcanvas-header {
+    background-color: gray;
 }
 
-.navbar-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: right;
-    gap: 30px;
-    margin-top: 15px;
+.offcanvas-body {
+    background-color: map-get($colores, color1); 
 }
 
-.navbar-redes i{
-    color: map-get($colores, color3); 
+.login-button{
+    background-color: gray;
+    color: black;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: larger;
+    transition: 0.3s backgroud-color;
 }
 
-.nav-item {
-    font-weight: bold;
-    font-size: 18px;
+.login-button:hover {
+    background-color: brown;
 }
 
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: map-get($colores, color3);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #666777;
+}
+
+@media (min-width: 768px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color:map-get($colores, color3);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    } 
+}

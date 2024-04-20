@@ -24,6 +24,14 @@
         height: 150px;
     }
 
+    .enventos{
+        height: 100px;
+    }
+
+    .eventos h1{
+    height: 70%;
+    }
+
     .mapa{
         width: 400px;
         height: 300px;
@@ -41,5 +49,14 @@
         padding: 2;
     }
 
+    .container-eventos img{ 
+        width: 50%;
+        height: 50%;
+        grid-column-start:0;
+        grid-column-end:2;
+        grid-row-start:0;
+        grid-row-end:6;
+        border: 1px solid white;
+    }
 
 }

@@ -9,7 +9,7 @@
   height: 100%;
   margin-left: 20px;
   margin-top: 30px;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-bottom: 30px; }
 
 .combo-01, .combo-02 {
@@ -39,24 +39,25 @@
   object-fit: contain; }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   text-decoration: none;
   list-style: none; }
 
 main {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   text-decoration: none;
   list-style: none; }
 
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  overflow-x: hidden; }
 
 h1 {
   color: #f7f5f5;
@@ -92,39 +93,60 @@ p {
   font-family: "Open Sans", sans-serif;
   font-style: normal; }
 
-.header {
-  height: 100%;
-  padding: 0px;
+.navbar {
   background-color: #C68A75;
-  position: sticky;
-  align-items: center; }
+  width: 100%;
+  height: 80px; }
 
-.container-fluid {
-  margin-top: 0px;
-  background-color: #C68A75;
-  padding: 0%;
-  margin: 0%; }
+.offcanvas-header {
+  background-color: gray; }
 
-.header li a:hover {
-  text-decoration: underline;
-  text-shadow: black; }
+.offcanvas-body {
+  background-color: #C68A75; }
 
-.navbar-redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: right;
-  gap: 30px;
-  margin-top: 15px; }
-
-.navbar-redes i {
-  color: #181818;
+.login-button {
+  background-color: gray;
+  color: black;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 30px;
   text-decoration: none;
-  font-size: larger; }
+  transition: 0.3s backgroud-color; }
 
-.nav-item {
-  font-weight: bold;
-  font-size: 18px; }
+.login-button:hover {
+  background-color: brown; }
+
+.navbar-toggler {
+  border: none;
+  font-size: 20px; }
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none; }
+
+.nav-link {
+  color: #181818;
+  font-weight: 500;
+  position: relative; }
+
+.nav-link:hover, .nav-link.active {
+  color: #666777; }
+
+@media (min-width: 768px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #181818;
+    visibility: hidden;
+    transition: 0.3s ease-in-out; }
+  .nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible; } }
 
 footer {
   display: flex;
@@ -251,8 +273,9 @@ body {
 */
 .lista {
   background-image: url(../assets/02.jpg);
+  background-size: cover;
   background-repeat: repeat-y;
-  background-size: cover; }
+  padding: 0%; }
 
 .catalogo h1 {
   margin-top: 20px; }
@@ -269,8 +292,22 @@ body {
   width: 100%;
   height: 100%; }
 
-.foto-nosotros {
-  margin-top: 20px; }
+.encabezado-nosotros {
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/paisaje_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px; }
+
+.encabezado-nosotros h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.875rem;
+  width: 40%;
+  height: 100%; }
 
 .info-nosotros {
   align-items: center; }
@@ -280,6 +317,23 @@ body {
   height: 400px;
   background-color: #A48559;
   padding: 15px; }
+
+.eventos {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/eventos-01.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px; }
+
+.eventos h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.875rem;
+  width: 40%;
+  height: 120%; }
 
 .container-eventos {
   display: grid;
@@ -341,7 +395,8 @@ body {
   height: 200px;
   background-image: url(../assets/img/contacto-01.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 80px; }
 
 .encabezado h1 {
   display: flex;
@@ -516,6 +571,10 @@ body {
     height: 450px; }
   .encabezado {
     height: 150px; }
+  .enventos {
+    height: 100px; }
+  .eventos h1 {
+    height: 70%; }
   .mapa {
     width: 400px;
     height: 300px; }
@@ -526,9 +585,25 @@ body {
   .info-nosotros p {
     width: 100%;
     height: 480px;
-    padding: 2; } }
+    padding: 2; }
+  .container-eventos img {
+    width: 50%;
+    height: 50%;
+    grid-column-start: 0;
+    grid-column-end: 2;
+    grid-row-start: 0;
+    grid-row-end: 6;
+    border: 1px solid white; } }
 
 @media (max-width: 320px) {
+  .navbar {
+    width: 100%; }
+  .main-index {
+    margin-top: 80px; }
+  .catalogo {
+    margin-top: 80px; }
+  .login-button {
+    display: none; }
   .index-info {
     width: 300px;
     height: 350px;

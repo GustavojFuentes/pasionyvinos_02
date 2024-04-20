@@ -8,59 +8,43 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="header"> 
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/logo-nav-bar.jpg" alt="Logo Pasion y Vinos">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="../index.html">
+                <img src="../assets/img/logo-nav-bar.jpg" alt="Logo Pasion y Vinos">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pasion y Vinos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./catalogo.html">Catálogo</a>
+                            <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link mx-lg-2" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./eventos.html">Eventos</a>
+                            <a class="nav-link mx-lg-2 active" href="./catalogo.html">Catálogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                            <a class="nav-link mx-lg-2" href="./eventos.html">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-redes">
-                        <li class="nav-item">
-                            <a href="https://api.whatsapp.com/send?phone=543546566391" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.instagram.com/pasionyvinos_ok/" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/pasionyvinos" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com/PasionVinos" target="_blank">
-                                <i class="bi bi-twitter-x"></i>
-                            </a>
+                            <a class="nav-link mx-lg-2" href="./contacto.html" >Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+                <a href="#" class="login-button">login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        </div>
+    </nav>
+
 <main class="catalogo">
     <h1>Catálogo</h1>
     <div class="combo-contendor">
@@ -86,77 +70,77 @@
         </section>
     </div>
     <div class="lista">
-    <h2>VINOS</h2>
-    <h3>Mendoza</h3>
-    <ul>
-    <li>PUNTA DIAMANTE  - LA CONSULTA Y ALTAMIRA - SAN CARLOS - VALLE DE UCO - ENOLOGO: ROBERTO SIMONETTO</li>
-    </ul>
-        <ol>
-            <li>VARIETAL MALBEC</li>
-            <li>VARIETAL CABERNET SAUVIGNON</li>
-            <li>RESERVA MALBEC</li>
-            <li>RESERVA CABERNET SAUVIGNON</li>
-            <li>CORTE UNICO GRAN RESERVA MALBEC-C.SAUVIGNON-SYRAH</li>
-        </ol>
-    <ul>
-    <li>MEVI - MENDOZA - COQUIMBITO - MAIPÚ - ENOLOGO: LUIS MARTINEZ</li>
-    </ul>
-    <ul>
-        <ol>
-            <li>VARIETAL MALBEC</li>
-            <li>VARIETAL CABERNET SAUVIGNON</li>
-            <li>VARIETAL TORRONTES</li>
-            <li>VARIETAL ROSADO CABERNET SAUVIGNON</li>
-            <li>RESERVA SYRAH</li>
-        </ol>
-    </ul>  
-    <h3>Noa</h3>
-    <ul>
-    <li>VALLES CALCHAQUIES, TUCUMAN Y CATAMARCA - ENOLOGO: AGUSTIN LANUS</li>
-    </ul>
-        <ol>
-            <li>MALBEC-TANNAT-C.SAUVIGNON</li>
-            <li>ILOGICO CRIOLLA</li>
-            <li>ILOGICO MALBEC</li>
-            <li>SALVAJE MALBEC</li>
-            <li>FACON CAB. SAUVIGNON</li>
-        </ol>
-    <h3>Jujuy</h3>
-    <ul>
-    <li>MAIMARA - ENOLOGO: MATIAS ETCHART/li>
-    </ul>
-    <ul>
-        <ol>
-            <li>MALBEC-SYRAH-CAB. FRANC</li>
-            <li>CABERNET SAUVIGNON-SYRAH</li>
-            <li>SYRAH</li>
-            <li>CABERNET FRANC</li>
-            <li>MALBEC-SYRAH-CABERNET SAUVIGNON</li>
-        </ol>
-    </ul>  
-    <h2>ESPUMANTES</h2>
-    <h3>Mendoza</h3>
-    <ul>
-    <li>RIVADAVIA Y VALLE DE UCO - ENOLOGO: HUGO BARO</li>
-    </ul>
-        <ol>
-            <li>ESPUMANTE ICONO EXTRA BRUT</li>
-            <li>ESPUMANTE ICONO BRUT NATURE</li>
-            <li>SUBURBIO ESPUMANTE</li>
-            <li>ESPUMANTE DULCE</li>
-            <li>GIMENEZ RIILI ESPUMANTE DULCE</li>
-        </ol>
+        <h2>VINOS</h2>
+        <h3>Mendoza</h3>
+        <ul>
+        <li>PUNTA DIAMANTE  - LA CONSULTA Y ALTAMIRA - SAN CARLOS - VALLE DE UCO - ENOLOGO: ROBERTO SIMONETTO</li>
+        </ul>
+            <ol>
+                <li>VARIETAL MALBEC</li>
+                <li>VARIETAL CABERNET SAUVIGNON</li>
+                <li>RESERVA MALBEC</li>
+                <li>RESERVA CABERNET SAUVIGNON</li>
+                <li>CORTE UNICO GRAN RESERVA MALBEC-C.SAUVIGNON-SYRAH</li>
+            </ol>
+        <ul>
+        <li>MEVI - MENDOZA - COQUIMBITO - MAIPÚ - ENOLOGO: LUIS MARTINEZ</li>
+        </ul>
+        <ul>
+            <ol>
+                <li>VARIETAL MALBEC</li>
+                <li>VARIETAL CABERNET SAUVIGNON</li>
+                <li>VARIETAL TORRONTES</li>
+                <li>VARIETAL ROSADO CABERNET SAUVIGNON</li>
+                <li>RESERVA SYRAH</li>
+            </ol>
+        </ul>  
+        <h3>Noa</h3>
+        <ul>
+        <li>VALLES CALCHAQUIES, TUCUMAN Y CATAMARCA - ENOLOGO: AGUSTIN LANUS</li>
+        </ul>
+            <ol>
+                <li>MALBEC-TANNAT-C.SAUVIGNON</li>
+                <li>ILOGICO CRIOLLA</li>
+                <li>ILOGICO MALBEC</li>
+                <li>SALVAJE MALBEC</li>
+                <li>FACON CAB. SAUVIGNON</li>
+            </ol>
+        <h3>Jujuy</h3>
+        <ul>
+        <li>MAIMARA - ENOLOGO: MATIAS ETCHART/li>
+        </ul>
+        <ul>
+            <ol>
+                <li>MALBEC-SYRAH-CAB. FRANC</li>
+                <li>CABERNET SAUVIGNON-SYRAH</li>
+                <li>SYRAH</li>
+                <li>CABERNET FRANC</li>
+                <li>MALBEC-SYRAH-CABERNET SAUVIGNON</li>
+            </ol>
+        </ul>  
+        <h2>ESPUMANTES</h2>
+        <h3>Mendoza</h3>
+        <ul>
+        <li>RIVADAVIA Y VALLE DE UCO - ENOLOGO: HUGO BARO</li>
+        </ul>
+            <ol>
+                <li>ESPUMANTE ICONO EXTRA BRUT</li>
+                <li>ESPUMANTE ICONO BRUT NATURE</li>
+                <li>SUBURBIO ESPUMANTE</li>
+                <li>ESPUMANTE DULCE</li>
+                <li>GIMENEZ RIILI ESPUMANTE DULCE</li>
+            </ol>
 
-    <h2>APERITIVOS</h2>
-    <li>FERNET NERO</li>
-    </ul>
-        <ol>
-            <li>FERNET PREMIUM - CLASICO</li>
-            <li>FERNET PREMIUM - BERRIES</li>
-            <li>FERNET PREMIUM - CITRUS</li>
-            <li>FERNET PREMIUM - MARACUYA</li>
-            <li>FERNET BARREL SELECT - BARRICADO</li>
-        </ol>
+        <h2>APERITIVOS</h2>
+        <li>FERNET NERO</li>
+        </ul>
+            <ol>
+                <li>FERNET PREMIUM - CLASICO</li>
+                <li>FERNET PREMIUM - BERRIES</li>
+                <li>FERNET PREMIUM - CITRUS</li>
+                <li>FERNET PREMIUM - MARACUYA</li>
+                <li>FERNET BARREL SELECT - BARRICADO</li>
+            </ol>
     </div>
 </main>
 <footer>
