@@ -1,0 +1,58 @@
+footer{
+    @include flex(row,left,none,1rem,100%,100%);
+    padding: 0px;
+    background-color: map-get($colores, color2); 
+    color: map-get($colores, color2); 
+    margin-top: 2rem;   
+    list-style: none;
+}
+
+.footer-container {
+    @include flex(row,space-between,center,2rem,100%,100%);
+    margin-left: 20px;
+}
+
+.logo-footer {
+    @include flex(row,space-between,center,2rem,18%,80%);
+}
+
+.redes-footer {
+    @include flex(row,left,left,1.25rem,33%,80%);
+}
+
+.redes-footer p{
+    color: map-get($colores, color3);
+}
+
+.footer-bodegas li a{
+    text-decoration: none;
+    list-style: none;
+    color: map-get($colores, color3); 
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.footer-socios li a{
+    text-decoration: none;
+    list-style: none;
+    color: map-get($colores, color3); 
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.footer-catalogo li a{
+    text-decoration: none;
+    list-style: none;
+    color: map-get($colores, color3); 
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}

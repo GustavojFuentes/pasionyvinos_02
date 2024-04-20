@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+@import "./base/reset";
+@import "./base/typografias";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+@import "./layout/main-catalogo";
+@import "./layout/main_nosotros";
+@import "./layout/main-eventos";
+@import "./layout/main-contacto";
+
+@import "./utilities/function";
+
+@import "./components/cards";
+
+@import "./layout/mediaQuerry/media768";
+@import "./layout/mediaQuerry/media320";

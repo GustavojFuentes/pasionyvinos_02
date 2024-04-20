@@ -1,0 +1,50 @@
+
+main {
+    height: 100%;
+    margin-top: 0px;
+    background-color: map-get($colores, color3); 
+}
+
+body {
+    height: 100%;
+    background-color: map-get($colores, color3); 
+}
+
+.index-intro {
+    @include flex(column,space-between,center,2rem,100%,100%);
+    margin-top: 30px;
+}
+
+.index-img{
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.index-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.index-info{
+    width: 600px;
+    height: 170px;
+    padding: 10px;
+    background-color: map-get($colores, color2); 
+    margin-bottom: 30px;
+}
+
+.jello-horizontal:hover{
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+/**
+ * ----------------------------------------
+.pulsate-bck:hover {
+	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+* ----------------------------------------
+*/

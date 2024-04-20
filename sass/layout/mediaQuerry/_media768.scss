@@ -1,0 +1,45 @@
+@media (max-width:768px){
+    .redes-footer {
+        display: none;
+    }
+    
+    .logo-footer {
+        @include flex(row,space-between,center,2rem,35%,80%);
+    }
+
+    .footer-container {
+        margin-right: 5px;
+
+    }
+
+    .combo-contendor{
+        margin-left: 0;
+    }
+
+    .combo-01 {
+        height: 450px;
+    }
+
+    .encabezado {
+        height: 150px;
+    }
+
+    .mapa{
+        width: 400px;
+        height: 300px;
+    }
+
+    .formulario{
+        width: 70%;
+        height: 600px;
+        margin-left: 10px;
+    }
+
+    .info-nosotros p{
+        width: 100%;
+        height: 480px;
+        padding: 2;
+    }
+
+
+}

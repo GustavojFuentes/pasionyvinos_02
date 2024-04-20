@@ -1,0 +1,11 @@
+.lista{
+    background-image: url(../assets/02.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.catalogo h1{
+    margin-top: 20px;
+}
+.catalogo li{
+    color: map-get($colores, color4);
+}

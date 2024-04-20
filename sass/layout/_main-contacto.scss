@@ -1,0 +1,43 @@
+.encabezado {
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/img/contacto-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encabezado h1{
+    @include flex(row,space-around,center,1.875rem,40%,100%);
+}
+
+.contacto-container{
+    @include flex(row,space-around,top,1.875rem,100%,100%);
+    margin-top: 30px;
+}
+
+.mapa{
+    width: 600px;
+    height: 500px;
+    align-items: top;
+    background-color: map-get($colores, color4 );
+    border: 1px solid white;
+}
+
+.formulario{
+    width: 40%;
+    height: 600px;
+    background-color: map-get($colores, color2 );
+    border: 1px solid white;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.mb-3{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.mb-3-mensaje{
+    width: 90%;
+    margin-left: 10px;
+}

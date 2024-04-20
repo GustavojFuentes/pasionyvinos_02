@@ -1,0 +1,41 @@
+
+.header {
+    height: 100%;
+    padding: 0px;
+    background-color: map-get($colores, color1 );
+    position: sticky;
+    align-items: center;
+}
+
+.container-fluid {
+    margin-top: 0px;
+    background-color: map-get($colores, color1); 
+    padding: 0%;
+    margin: 0%;
+}
+
+.header li a:hover {
+    text-decoration: underline;
+    text-shadow:black;
+}
+
+.navbar-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.navbar-redes i{
+    color: map-get($colores, color3); 
+    text-decoration: none;
+    font-size: larger;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-size: 18px;
+}
+

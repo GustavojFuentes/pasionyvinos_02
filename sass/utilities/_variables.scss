@@ -1,0 +1,43 @@
+.combo-contendor{
+    @include flex(row,left,center,1.875rem,100%,100%);
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.combo-01 {
+    width: 48%;
+    height: 50%;
+    text-align: center;
+    background-color: map-get($colores, color3 );
+    border: 2px solid map-get($colores, color1 );
+    border-radius: 10px;
+}
+
+.combo-01-img{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.combo-01-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.combo-02 {
+    @extend .combo-01;
+    border: 3px solid map-get($colores, color2 );
+}
+
+.combo-02-img {
+    @extend .combo-01-img
+}
+
+.combo-02-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

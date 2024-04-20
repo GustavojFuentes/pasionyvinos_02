@@ -1,0 +1,18 @@
+.nosotros {
+    @include flex(column,space-around,center,1.25rem,100%,100%);
+}
+
+.foto-nosotros{
+    margin-top: 20px;
+}
+
+.info-nosotros{
+    align-items: center
+}
+.info-nosotros p{
+    width: 900px;
+    height: 400px;
+    background-color: map-get($colores, color2 );
+    padding: 15px;
+}
+
