@@ -1,23 +1,26 @@
 @media (max-width:768px){
+    
+    .logo-footer img{
+        width: 70%;
+        height: 70%;
+    }
+
     .redes-footer {
         display: none;
     }
-    
-    .logo-footer {
-        @include flex(row,space-between,center,2rem,35%,80%);
-    }
-
-    .footer-container {
-        margin-right: 5px;
-
-    }
 
     .combo-contendor{
+        flex-direction: column;
         margin-left: 0;
     }
 
     .combo-01 {
-        height: 450px;
+        width: 90%;
+        height: 50%;
+    }
+    .combo-02 {
+        width: 90%;
+        height: 50%;
     }
 
     .encabezado {
@@ -45,7 +48,7 @@
 
     .info-nosotros p{
         width: 100%;
-        height: 480px;
+        height: 100%;
         padding: 2;
     }
 
@@ -59,4 +62,12 @@
         border: 1px solid white;
     }
 
+}
+
+@media (max-width:950px){
+    .redes-footer {
+        flex-direction: column;
+        align-items: end;
+        
+    }
 }

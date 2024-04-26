@@ -16,11 +16,11 @@
 }
 
 .info-nosotros{
+    width: 60%;
+    height: 50%;
     align-items: center
 }
 .info-nosotros p{
-    width: 900px;
-    height: 400px;
     background-color: map-get($colores, color2 );
     padding: 15px;
 }

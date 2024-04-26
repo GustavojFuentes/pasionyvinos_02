@@ -1,4 +1,20 @@
 
+.combo-contenedor {
+    @include flex(row,space-around,center,1rem,100%,100%);
+}
+
+.combo-01 {
+    width: 48%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.combo-02 {
+    width: 48%;
+    height: 100%;
+    margin-right: 5px;
+}
+
 .lista{
     background-image: url(../assets/02.jpg);
     background-size: cover;
