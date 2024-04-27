@@ -7,7 +7,7 @@
 }
 
 .offcanvas-header {
-    background-color: gray;
+    background-color: map-get($colores, color1);
 }
 
 .offcanvas-body {
@@ -15,8 +15,9 @@
 }
 
 .login-button{
-    background-color: gray;
-    color: black;
+    background-color: map-get($colores, color3);
+    color: white;
+    font-weight: bold;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 30px;
@@ -25,7 +26,8 @@
 }
 
 .login-button:hover {
-    background-color: brown;
+    color: white;
+    background-color: rgb(85, 34, 34);
 }
 
 .navbar-toggler {

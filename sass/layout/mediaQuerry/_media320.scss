@@ -1,6 +1,35 @@
 @media (max-width:320px){
-    .navbar {
+
+    .index-img {
         width: 100%;
+        height: 70%;
+    }
+
+    .index-info {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .index-info p {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .nosotros-img{
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .container-fluid img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .text-center img {
+        width: 70%;
     }
 
     .main-index{
@@ -8,54 +37,19 @@
     }
 
     .catalogo{
-        margin-top: 80px;
+        margin-top: 100px;
     }
-
 
     .login-button {
         display: none;
     }
 
-    .index-info{
-        width: 300px;
-        height: 350px;
-        padding: 2px;
-        margin-bottom: 60px;
-    }
-
-    .index-img{
-        width: 100%;
-    }
-
-    .logo-footer {
-        display: none;
-    }
-
-    .footer-bodegas li a{
-        font-size: 9px;
-        font-weight: 2000;
-        font-style: normal;
-    }
-    
-    .footer-socios li a{
-        font-size: 9px;
-        font-weight: 200;
-    }
-    
-    .footer-catalogo li a{
-        font-size: 9px;
-        font-weight: 200;
-    }
     h4{
         font-size: small;
     }
     
     .card{
         height: 50%;
-    }
-
-    h5 {
-        display: none;
     }
 
     .combo-contendor {
@@ -93,13 +87,16 @@
         margin-bottom: 5px;
     }
 
-    .foto-nosotros img{
+
+    .encabezado-nosotros {
+        width: 100%;
         height: 200px;
     }
 
-    .info-nosotros p{
+    .info-nosotros{
         width: 100%;
-        height: 1200px;
-        padding: 2;
+        height: 80%;
+        align-items: center
     }
+
 }

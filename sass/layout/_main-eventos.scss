@@ -4,11 +4,11 @@
     background-image: url(../assets/eventos-01.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .eventos h1{
-    @include flex(row,space-around,center,1.875rem,40%,120%);
+    @include flex(row,space-around,center,1.875rem,40%,100%);
 }
 
 

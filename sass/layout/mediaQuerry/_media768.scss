@@ -1,12 +1,29 @@
 @media (max-width:768px){
-    
-    .logo-footer img{
-        width: 70%;
-        height: 70%;
+
+    .index-img {
+        width: 90%;
+        height: 70%;        
     }
 
-    .redes-footer {
-        display: none;
+    .index-info {
+        width: 90%;
+        height: 30%;
+    }
+
+    .nosotros-img{
+        width: 90%;
+        height: 70%;
+        overflow: hidden;
+    }
+
+    .nosotros-img img{
+        width: 100%;
+        height: 100%;        
+    }
+
+    .container-fluid img {
+        width: 85%;
+        height: 85%;
     }
 
     .combo-contendor{
@@ -46,6 +63,22 @@
         margin-left: 10px;
     }
 
+    .encabezado-nosotros {
+        width: 100%;
+        height: 350px;
+    }
+
+    .nosotros {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-nosotros{
+        width: 90%;
+        height: 70%;
+        align-items: center
+    }
+
     .info-nosotros p{
         width: 100%;
         height: 100%;
@@ -70,4 +103,12 @@
         align-items: end;
         
     }
+}
+
+@media (max-width:370px){
+.navbar {
+    width: 100%;
+    height: 100px;
+}
+
 }

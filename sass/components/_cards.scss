@@ -1,5 +1,6 @@
 .card-contenedor{
     @include flex(row,center,center,1.875rem,100%,100%);
+    margin-bottom: 30px;
 }
 
 .card{

@@ -4,7 +4,7 @@
 
 .encabezado-nosotros {
     width: 100%;
-    height: 450px;
+    height: 300px;
     background-image: url(../assets/paisaje_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +14,24 @@
 .encabezado-nosotros h1{
     @include flex(row,space-around,center,1.875rem,40%,100%);
 }
+
+.nosotros{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nosotros-img{
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.nosotros-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .info-nosotros{
     width: 60%;

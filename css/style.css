@@ -99,14 +99,15 @@ p {
   height: 80px; }
 
 .offcanvas-header {
-  background-color: gray; }
+  background-color: #C68A75; }
 
 .offcanvas-body {
   background-color: #C68A75; }
 
 .login-button {
-  background-color: gray;
-  color: black;
+  background-color: #181818;
+  color: white;
+  font-weight: bold;
   font-size: 14px;
   padding: 8px 20px;
   border-radius: 30px;
@@ -114,7 +115,8 @@ p {
   transition: 0.3s backgroud-color; }
 
 .login-button:hover {
-  background-color: brown; }
+  color: white;
+  background-color: #552222; }
 
 .navbar-toggler {
   border: none;
@@ -148,80 +150,26 @@ p {
     width: 100%;
     visibility: visible; } }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: none;
-  gap: 1rem;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  background-color: #A48559;
-  color: #A48559;
-  margin-top: 2rem;
-  list-style: none; }
+a {
+  text-decoration: none;
+  font-size: 1.0625rem; }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  height: 100%;
-  margin-left: 20px; }
-
-.logo-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  width: 18%;
-  height: 80%; }
-
-.redes-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: left;
-  gap: 1.25rem;
-  width: 33%;
-  height: 80%; }
-
-.redes-footer p {
+p {
+  font-size: 17px;
   color: #181818; }
 
-.footer-bodegas li a {
-  text-decoration: none;
-  list-style: none;
-  color: #181818;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal; }
+a:hover {
+  color: white !important; }
 
-.footer-socios li a {
-  text-decoration: none;
-  list-style: none;
-  color: #181818;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal; }
+i {
+  font-size: 25px; }
 
-.footer-catalogo li a {
-  text-decoration: none;
-  list-style: none;
-  color: #181818;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal; }
+h5 {
+  font-weight: bold;
+  font-size: 17px; }
+
+footer {
+  background-color: #A48559; }
 
 main {
   height: 100%;
@@ -271,6 +219,23 @@ body {
 }
 * ----------------------------------------
 */
+.encabezado-catalogo {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/paisaje_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px; }
+
+.encabezado-catalogo h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.875rem;
+  width: 40%;
+  height: 100%; }
+
 .combo-contenedor {
   display: flex;
   flex-direction: row;
@@ -313,7 +278,7 @@ body {
 
 .encabezado-nosotros {
   width: 100%;
-  height: 450px;
+  height: 300px;
   background-image: url(../assets/paisaje_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,6 +292,20 @@ body {
   gap: 1.875rem;
   width: 40%;
   height: 100%; }
+
+.nosotros {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.nosotros-img {
+  width: 60%;
+  height: 70%;
+  overflow: hidden; }
+
+.nosotros-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
 
 .info-nosotros {
   width: 60%;
@@ -343,7 +322,7 @@ body {
   background-image: url(../assets/eventos-01.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 70px; }
+  margin-top: 80px; }
 
 .eventos h1 {
   display: flex;
@@ -352,7 +331,7 @@ body {
   align-items: center;
   gap: 1.875rem;
   width: 40%;
-  height: 120%; }
+  height: 100%; }
 
 .container-eventos {
   display: grid;
@@ -411,7 +390,7 @@ body {
 
 .encabezado {
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-image: url(../assets/img/contacto-01.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -538,7 +517,8 @@ body {
   align-items: center;
   gap: 1.875rem;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 30px; }
 
 .card {
   width: 200px;
@@ -572,11 +552,22 @@ body {
   animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
 
 @media (max-width: 768px) {
-  .logo-footer img {
-    width: 70%;
+  .index-img {
+    width: 90%;
     height: 70%; }
-  .redes-footer {
-    display: none; }
+  .index-info {
+    width: 90%;
+    height: 30%; }
+  .nosotros-img {
+    width: 90%;
+    height: 70%;
+    overflow: hidden; }
+  .nosotros-img img {
+    width: 100%;
+    height: 100%; }
+  .container-fluid img {
+    width: 85%;
+    height: 85%; }
   .combo-contendor {
     flex-direction: column;
     margin-left: 0; }
@@ -599,6 +590,16 @@ body {
     width: 70%;
     height: 600px;
     margin-left: 10px; }
+  .encabezado-nosotros {
+    width: 100%;
+    height: 350px; }
+  .nosotros {
+    width: 100%;
+    height: 100%; }
+  .info-nosotros {
+    width: 90%;
+    height: 70%;
+    align-items: center; }
   .info-nosotros p {
     width: 100%;
     height: 100%;
@@ -617,40 +618,42 @@ body {
     flex-direction: column;
     align-items: end; } }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .navbar {
-    width: 100%; }
+    width: 100%;
+    height: 100px; } }
+
+@media (max-width: 320px) {
+  .index-img {
+    width: 100%;
+    height: 70%; }
+  .index-info {
+    width: 100%;
+    height: 100%;
+    padding: 0px; }
+  .index-info p {
+    width: 100%;
+    height: 100%;
+    padding: 0px; }
+  .nosotros-img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden; }
+  .container-fluid img {
+    width: 70%;
+    height: 70%; }
+  .text-center img {
+    width: 70%; }
   .main-index {
     margin-top: 80px; }
   .catalogo {
-    margin-top: 80px; }
+    margin-top: 100px; }
   .login-button {
     display: none; }
-  .index-info {
-    width: 300px;
-    height: 350px;
-    padding: 2px;
-    margin-bottom: 60px; }
-  .index-img {
-    width: 100%; }
-  .logo-footer {
-    display: none; }
-  .footer-bodegas li a {
-    font-size: 9px;
-    font-weight: 2000;
-    font-style: normal; }
-  .footer-socios li a {
-    font-size: 9px;
-    font-weight: 200; }
-  .footer-catalogo li a {
-    font-size: 9px;
-    font-weight: 200; }
   h4 {
     font-size: small; }
   .card {
     height: 50%; }
-  h5 {
-    display: none; }
   .combo-contendor {
     flex-direction: column;
     margin: 0; }
@@ -672,9 +675,10 @@ body {
     width: 100%;
     margin-left: 0px;
     margin-bottom: 5px; }
-  .foto-nosotros img {
-    height: 200px; }
-  .info-nosotros p {
+  .encabezado-nosotros {
     width: 100%;
-    height: 1200px;
-    padding: 2; } }
+    height: 200px; }
+  .info-nosotros {
+    width: 100%;
+    height: 80%;
+    align-items: center; } }
