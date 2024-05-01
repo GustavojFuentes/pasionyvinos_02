@@ -11,67 +11,56 @@
     @include flex(row,space-around,center,1.875rem,40%,100%);
 }
 
-
 .container-eventos{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(6,1fr);
+    @include flex(row,space-around,top,1.875rem,100%,100%);
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.container-eventos h1{
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.container-eventos h2{
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.container-eventos img{ 
-    width: 50%;
-    height: 100%;
-    grid-column-start:2;
-    grid-column-end:6;
-    grid-row-start: 2;
-    grid-row-end: 6;
+.card-regina{
+    @include flex(column,space-around,center,1.875rem,45%,100%);
+    text-align: center;
     border: 1px solid white;
+    background-color: map-get($colores, color2 );
+    border-radius: 10px;
 }
 
-.container-eventos p{ 
-grid-column: 4 / 6;
-grid-row: 3 / 6;
-background-color: map-get($colores, color2); 
-}
-
-.container-malbec{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(6,1fr);
-}
-
-.container-malbec h2{
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.container-malbec img{ 
+.card-regina img{
     width: 50%;
-    height: 80%;
-    grid-column-start:6;
-    grid-column-end:9;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    height: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    object-fit: contain;
 }
 
-.container-malbec p{ 
-grid-column: 2 / 6;
-grid-row: 2 / 6;
-background-color: map-get($colores, color2); 
+.card-malbec{
+    @include flex(column,space-around,center,1.875rem,45%,100%);
+    text-align: center;
+    border: 1px solid white;
+    background-color: map-get($colores, color2 );
+    border-radius: 10px;
 }
+
+.card-malbec img{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.card-navarro{
+    @include flex(column,space-around,center,1.875rem,45%,100%);
+    text-align: center;
+    border: 1px solid white;
+    background-color: map-get($colores, color2 );
+    border-radius: 10px;
+}
+
+.card-navarro img{
+    width: 50%;
+    height: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    object-fit: contain;
+}
+
