@@ -18,10 +18,12 @@
 
 .mapa{
     width: 600px;
-    height: 500px;
+    height: 600px;
     align-items: top;
-    background-color: map-get($colores, color4 );
+    background-color: map-get($colores, color2 );
     border: 1px solid white;
+    color: map-get($colores, color3);
+    margin-top: 10px;
 }
 
 .formulario{
@@ -31,6 +33,7 @@
     border: 1px solid white;
     margin-left: 30px;
     margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .mb-3{
@@ -42,3 +45,4 @@
     width: 90%;
     margin-left: 10px;
 }
+

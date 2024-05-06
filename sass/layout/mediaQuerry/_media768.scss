@@ -1,12 +1,12 @@
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .main-index{
+    .main-index {
         margin-top: 80px;
     }
 
     .index-img {
         width: 90%;
-        height: 70%;        
+        height: 70%;
     }
 
     .index-info {
@@ -14,15 +14,15 @@
         height: 30%;
     }
 
-    .nosotros-img{
+    .nosotros-img {
         width: 90%;
         height: 70%;
         overflow: hidden;
     }
 
-    .nosotros-img img{
+    .nosotros-img img {
         width: 100%;
-        height: 100%;        
+        height: 100%;
     }
 
     .container-fluid img {
@@ -30,7 +30,7 @@
         height: 80%;
     }
 
-    .combo-contendor{
+    .combo-contendor {
         flex-direction: column;
         margin-left: 0;
     }
@@ -39,6 +39,7 @@
         width: 90%;
         height: 50%;
     }
+
     .combo-02 {
         width: 90%;
         height: 50%;
@@ -48,20 +49,21 @@
         height: 150px;
     }
 
-    .enventos{
-        height: 100px;
+    .encabezado-catalogo {
+        height: 150px;
     }
 
-    .eventos h1{
-    height: 70%;
+    .eventos {
+        width: 100%;
+        height: 150px;
     }
 
-    .mapa{
+    .mapa {
         width: 400px;
         height: 300px;
     }
 
-    .formulario{
+    .formulario {
         width: 70%;
         height: 80%;
         margin-left: 10px;
@@ -69,7 +71,7 @@
 
     .encabezado-nosotros {
         width: 100%;
-        height: 350px;
+        height: 150px;
     }
 
     .nosotros {
@@ -77,54 +79,56 @@
         height: 100%;
     }
 
-    .info-nosotros{
+    .info-nosotros {
         width: 90%;
         height: 70%;
         align-items: center
     }
 
-    .info-nosotros p{
+    .info-nosotros p {
         width: 100%;
         height: 100%;
         padding: 2;
     }
 
-    .contacto-container{
+    .contacto-container {
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
     }
-    
-    .mapa{
+
+    .mapa {
         width: 90%;
         height: 50%;
     }
-    
-    .formulario{
+
+    .formulario {
         width: 90%;
         margin-left: 0px;
         margin-bottom: 5px;
     }
 
-    .container-eventos{
-        @include flex(column,space-around,top,1.875rem,100%,100%);
+    .container-eventos {
+        @include flex(column, space-around, top, 1.875rem, 100%, 100%);
     }
 
-    .card-regina{
+    .card-regina {
         width: 100%;
     }
-    .card-malbec{
+
+    .card-malbec {
         width: 100%;
     }
-    .card-navarro{
+
+    .card-navarro {
         width: 100%;
     }
 
 }
 
-@media (max-width:410px){
+@media (max-width:410px) {
 
     header .text-center {
-    display: none;
+        display: none;
     }
 }

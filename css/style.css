@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none; }
+
+main {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden; }
+
 .combo-contendor {
   display: flex;
   flex-direction: row;
@@ -37,27 +58,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain; }
-
-* {
-  margin: 0%;
-  padding: 0%;
-  text-decoration: none;
-  list-style: none; }
-
-main {
-  height: 100%;
-  margin: 0%;
-  padding: 0%;
-  text-decoration: none;
-  list-style: none; }
-
-body {
-  height: 100%;
-  margin: 0%;
-  padding: 0%;
-  text-decoration: none;
-  list-style: none;
-  overflow-x: hidden; }
 
 h1 {
   color: #f7f5f5;
@@ -442,10 +442,12 @@ body {
 
 .mapa {
   width: 600px;
-  height: 500px;
+  height: 600px;
   align-items: top;
-  background-color: #f7f5f5;
-  border: 1px solid white; }
+  background-color: #A48559;
+  border: 1px solid white;
+  color: #181818;
+  margin-top: 10px; }
 
 .formulario {
   width: 40%;
@@ -453,7 +455,8 @@ body {
   background-color: #A48559;
   border: 1px solid white;
   margin-left: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 10px; }
 
 .mb-3 {
   width: 90%;
@@ -606,10 +609,11 @@ body {
     height: 50%; }
   .encabezado {
     height: 150px; }
-  .enventos {
-    height: 100px; }
-  .eventos h1 {
-    height: 70%; }
+  .encabezado-catalogo {
+    height: 150px; }
+  .eventos {
+    width: 100%;
+    height: 150px; }
   .mapa {
     width: 400px;
     height: 300px; }
@@ -619,7 +623,7 @@ body {
     margin-left: 10px; }
   .encabezado-nosotros {
     width: 100%;
-    height: 350px; }
+    height: 150px; }
   .nosotros {
     width: 100%;
     height: 100%; }
