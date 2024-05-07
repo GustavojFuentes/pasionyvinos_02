@@ -19,7 +19,21 @@
 .combo-01 {
     width: 48%;
     height: 100%;
-    margin-left: 5px;
+    margin-left: 2px;
+}
+
+.combo-01 a{
+    margin-bottom: 10px;
+}
+
+.combo-01 h6{
+    color: map-get($colores, color4 );
+    text-align: center;
+}
+
+.combo-01-info p{
+    color: map-get($colores, color4 );
+    text-align: center;
 }
 
 .combo-02 {
@@ -28,15 +42,22 @@
     margin-right: 5px;
 }
 
+.combo-02-info p{
+    color: map-get($colores, color4 );
+    text-align: center;
+}
+
 .lista{
     background-image: url(../assets/02.jpg);
     background-size: cover;
     background-repeat: repeat-y;
     padding: 0%;
 }
-.catalogo h1{
+.catalogo h1, h2, h3{
     margin-top: 20px;
+    margin-left: 30px;
 }
 .catalogo li{
     color: map-get($colores, color4);
+    margin-left: 30px;
 }

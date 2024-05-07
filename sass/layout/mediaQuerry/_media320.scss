@@ -63,6 +63,13 @@
         margin-bottom: 10px;
     }
 
+    .catalogo h1, h2, h3{
+        margin-left: 3px;
+    }
+    .catalogo li{
+        margin-left: 3px;
+    }
+
     .combo-contendor p {
         display: none;
     }
@@ -91,7 +98,12 @@
 
     .encabezado-nosotros {
         width: 100%;
-        height: 200px;
+        height: 100px;
+    }
+
+    .eventos {
+        width: 100%;
+        height: 100px;
     }
 
     .info-nosotros{
@@ -103,7 +115,7 @@
     
     .encabezado-catalogo {
         width: 100%;
-        height: 200px;
+        height: 100px;
         margin-bottom: 10px;
     }
 
